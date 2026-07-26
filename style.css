@@ -46,3 +46,53 @@ button:hover {
     color: var(--text-color);
     cursor: pointer;
 }
+
+.dummyContent {
+    padding: 2rem;
+    width: 600px;
+    height: 300px;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.cookieWrapper {
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.cookieWrapper .cookieOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color);
+    opacity: 50%;
+}
+
+.cookieWrapper .cookieWindow {
+    width: 400px;
+    padding: 1.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    right: 50px;
+    bottom: 50px;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+#cookieWrapper.disabled {
+    display: none;
+}
+
