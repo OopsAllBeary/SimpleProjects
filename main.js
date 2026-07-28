@@ -7,7 +7,7 @@ const scanDocumentForNecessaryElements = () => {
 
 }
 
-const initEventListener = () => {
+const initEventListeners = () => {
 
 }
 
