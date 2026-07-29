@@ -1,0 +1,35 @@
+# Prerequisites
+node_modules/
+
+# Build and Output logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing & Coverage
+/coverage
+*.spec.js
+*.test.js
+**/__tests__/
+
+# Build directories
+/dist
+/build
+/out
+
+# IDEs and text editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
