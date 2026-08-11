@@ -1,5 +1,3 @@
-import { DateTime } from "./node_modules/luxon/build/es6/luxon.mjs";
-
 var birthdate, ageText;
 
 
@@ -20,8 +18,8 @@ const initEventListeners = () => {
 }
 
 const calculateAge = (userBirthDate) => {
-    const now = DateTime.now();
-    const compareDate = DateTime.fromISO(userBirthDate);
+    const now = luxon.DateTime.now();
+    const compareDate = luxon.DateTime.fromISO(userBirthDate);
 
     const exactAge = now.diff(compareDate, ["years", "months", "days"]).toObject();
     ageText.innerHTML = "You are " + exactAge.years + " years old";
