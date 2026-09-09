@@ -1,0 +1,96 @@
+:root {
+    color-scheme: light dark;
+    font-family: 'Roboto', sans-serif;
+
+    --bg-color: light-dark(#f5f5f5, black);
+    --text-color: light-dark(black, #f5f5f5);
+    --accent-color: light-dark(#3a74cf, #99ccff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    padding: 32px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.tabs {
+    width: 500px;
+    border: 3px solid var(--accent-color);
+    border-radius: 0.5rem;
+}
+
+.tabs .tab-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--accent-color);
+    list-style: none;
+}
+
+.tabs .tab-header li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.tabs .tab-header li.active {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.tabs .tab-content {
+    padding: 1rem;
+    
+}
+
+.tabs .tab-content > div {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    display: none;
+}
+
+.tabs .tab-content > div.active {
+    display: flex;
+}
+
+button {
+    background-color: var(--bg-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
