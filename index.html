@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Only Portfolio</title>
+        <meta name="description" content="A simple HTML-only portfolio website.">
+        <meta property="og:title" content="HTML Only Portfolio">
+        <meta property="og:description" content="A simple HTML-only portfolio website.">
+        <meta property="og:image" content="https://placehold.co/600x400">
+        <link rel="icon" type="image/x-icon" href="https://favicon.cc">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+
+            :root {
+                color-scheme: light dark; 
+
+                --bg-color: light-dark(#f5f5f5, black);
+                --text-color: light-dark(black, #f5f5f5);
+                --accent-color: light-dark(#3a74cf, #99ccff);
+                }
+            
+            * {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            box-sizing: border-box;
+            }
+
+            .header-content {
+                margin: 0 8px;
+                display: flex;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: calc(100% - 16px);
+                background-color: var(--bg-color);
+                padding: 10px 20px;
+                border: 2px solid var(--text-color);
+                z-index: 1000;
+            }
+
+            .header-content a {
+                text-decoration: none;
+                color: var(--text-color);
+            }
+            
+            nav ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 20px 30px;
+                gap: 20px;
+            }
+            
+            #home {
+                display: flex;
+                flex-direction: column;
+                height: 600px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 2px solid var(--text-color);
+            }
+            
+            #projects {
+                margin: 0;
+            }
+
+            #contact form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .formRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+
+            .formRow textarea {
+                width: 100%;
+                min-height: 150px;
+            }
+
+            .formRow input, .formRow textarea {
+                flex: 1;
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .formRow label {
+                margin-right: 10px;
+                width: 150px;
+            }
+            
+            .multi-columns {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 100%;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+            }
+            
+            .projects, .experience, .education, #contact {
+                flex: 1;
+                border: 2px solid var(--text-color);
+                padding: 20px;
+            }
+            
+            .experience ul, .education ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            .experience li, .education li {
+                margin-bottom: 20px;
+            }
+            
+            .experience h4, .education h4 {
+                padding: 0;
+                font-size: 16px;
+                margin: 0;
+            }
+            
+            .experience p, .education p {
+                padding: 0;
+                margin: 0;
+                color: var(--accent-color);
+            }
+            
+            .education span {
+                color: var(--accent-color);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h3><a href="/">Bear</a></h3>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <body>
+            <section id="home">
+                <h1>Front-End Developer</h1>
+                <p>This is a simple HTML-only portfolio website.</p>
+            </section>
+            <section id="projects">
+                <div class="multi-columns">
+                    <div class="projects">
+                        <h2>Projects</h2>
+                        <ul>
+                            <li><a href="https://oopsallbeary.github.io/HTML-CV">HTML Only CV</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-Portfolio">HTML Only Portfolio</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-Changelog/">HTML Only Changelog</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-Datepicker/">HTML Only Datepicker</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-Form/">HTML Only Form</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-ImageGrid/">HTML Only Image Grid</a></li>
+                            <li><a href="https://oopsallbeary.github.io/HTML-Tooltip/">HTML Only Tooltip</a></li>
+                            <li><a href="https://oopsallbeary.github.io/JS-Tabs/">JS Tabs</a></li>
+                            <li><a href="https://oopsallbeary.github.io/JS-CookieConsent/">JS Cookie Consent</a></li>
+                            <li><a href="https://oopsallbeary.github.io/JS-RestrictedTextArea/">JS Restricted Textarea</a></li>
+                            <li><a href="https://oopsallbeary.github.io/JS-Accordion/">JS Accordion</a></li>
+                            <li><a href="https://oopsallbeary.github.io/JS-AgeCalculator/">JS Age Calculator</a></li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><h4>Creative Technology Director</h4><p>Polygon Circus</p></li>
+                            <li><h4>SVP, Creative Technology Director</h4><p>21GRAMS NY</p></li>
+                            <li><h4>VP, Creative Technology Director</h4><p>Deutsch LA</p></li>
+                            <li><h4>Senior Creative Technologist</h4><p>MaxMedia Technologies</p></li>
+                            <li><h4>Senior Innovation Strategist</h4><p>Fitzco McCann</p></li>
+                            <li><h4>Senior Creative Technologist | Innovation Lead</h4><p>BBDO NY</p></li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>
+                                <h4><span>VCU Brandcenter </span>— Master's in Business | Creative Technology</h4>
+                                <p>Graduated: 2014</p>
+                            </li>
+                            <li>
+                                <h4><span>Virginia Commonwealth University </span>— Bachelor's in Mass Communication | Creative Advertising</h4>
+                                <p>Graduated: 2011</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>I'm always open to discussing new opportunities. Reach out via this form, or email me directly at <a href="mailto:oopsallbeary@gmail.com">oopsallbeary@gmail.com</a></p>
+                <form action="https://formsubmit.co/oopsallbeary@gmail.com" method="POST">
+                    <div class="formRow">
+                        <label for="name">Enter Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Enter Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formRow">
+                        <label for="message">Enter Message:</label>
+                        <textarea name="message" id="message" required placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </body>
+    </body>
+</html>
