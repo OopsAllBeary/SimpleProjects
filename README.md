@@ -1,7 +1,5 @@
-# JS-Tabs
+# JS-CookieConsent
 
-## Challenge # 9
+## Challenge # 10
 
-create a simple tab functionality using HTML, CSS, and basic JavaScript. The page will have four tabs, with the first tab being active by default. When the user clicks on another tab, the content of the current tab will be hidden, and the content of the selected tab will be displayed.
-
-As a bonus, i added 3 api calls to fill the content
+ a simple cookie consent popup that appears when the user visits the page. The popup will include a message and a button to accept the consent. Once accepted, the popup will disappear.
