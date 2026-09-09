@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Datepicker</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>HTML Datepicker</h1>
+        </header>
+        <main>
+            <div class="datepicker-container">
+                <div class="datepicker-mainInput">
+                    <label for="date">Select a date:</label>
+                    <input type="text" id="date" name="date" placeholder="mm/dd/yyyy" />
+                </div>
+                <div class="datepicker-calendar">
+                    <div class="datepicker-header">
+                        <button id="prev-month" class="datepicker-button" aria-label="Previous Month">&lt;</button>
+                        <span id="month-year">December 2022</span>
+                        <button id="next-month" class="datepicker-button" aria-label="Next Month">&gt;</button>
+                    </div>
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body">
+                            <tr>
+                                <td class="prev-month">27</td>
+                                <td class="prev-month">28</td>
+                                <td class="prev-month">29</td>
+                                <td class="prev-month">30</td>
+                                <td class="current-month">1</td>
+                                <td class="current-month">2</td>
+                                <td class="current-month">3</td>
+                            </tr>
+                            <tr>
+                                <td class="current-month">4</td>
+                                <td class="current-month">5</td>
+                                <td class="current-month">6</td>
+                                <td class="current-month">7</td>
+                                <td class="current-month">8</td>
+                                <td class="current-month">9</td>
+                                <td class="current-month">10</td>
+                            </tr>
+                            <tr>
+                                <td class="current-month">11</td>
+                                <td class="current-month">12</td>
+                                <td class="current-month">13</td>
+                                <td class="current-month">14</td>
+                                <td class="current-month">15</td>
+                                <td class="current-month">16</td>
+                                <td class="current-month">17</td>
+                            </tr>
+                            <tr>
+                                <td class="current-month">18</td>
+                                <td class="current-month">19</td>
+                                <td class="current-month">20</td>
+                                <td class="current-month">21</td>
+                                <td class="current-month">22</td>
+                                <td class="current-month">23</td>
+                                <td class="current-month">24</td>
+                            </tr>
+                            <tr>
+                                <td class="current-month">25</td>
+                                <td class="current-month">26</td>
+                                <td class="current-month">27</td>
+                                <td class="current-month">28</td>
+                                <td class="current-month">29</td>
+                                <td class="current-month">30</td>
+                                <td class="next-month">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+:root {
+    color-scheme: light dark;
+    font-family: 'Roboto', sans-serif;
+
+    --bg-color: light-dark(#f5f5f5, black);
+    --text-color: light-dark(black, #f5f5f5);
+    --accent-color: light-dark(#3a74cf, #99ccff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    padding: 32px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+}
+
+.datepicker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 400px;
+    border: solid 1px var(--accent-color);
+    padding: 1rem;
+}
+
+.datepicker-calendar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+}
+
+.datepicker-header button {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#calendar-table {
+    width: calc(100% - 2rem);
+    border-collapse: collapse;
+    margin: 0 1rem;
+}
+
+#calendar-table th, #calendar-table td {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#calendar-table th {
+    color: var(--accent-color);
+}
+
+#calendar-table td {
+    cursor: pointer;
+    border: solid 1px var(--accent-color);
+}
+
+#calendar-table td:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+#calendar-table td.selected {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+#calendar-table td.prev-month, #calendar-table td.next-month {
+    color: var(--text-color);
+    opacity: 0.25;
+}
+
+#calendar-table td.prev-month:hover, #calendar-table td.next-month:hover {
+    opacity: 0.5;
+    background-color: var(--bg-color);
+}
+
