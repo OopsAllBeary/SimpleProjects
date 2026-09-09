@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS - Tabs</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="tabs">
+                <ul class="tab-header">
+                    <li class="active" id="uselessButton">Useless Facts</li>
+                    <li id="catButton">Cat Facts</li>
+                    <li id="pokemonButton">Pokemon Facts</li>
+                </ul>
+                <div class="tab-content">
+                    <div class="active" id="uselessContentWrapper">
+                        <h4>Here's a random useless fact</h4>
+                        <div class="tabContent" id="uselessContent">
+                            Content Loading...
+                        </div>
+                        <button id="refreshUselessButton">
+                            New Useless Fact
+                        </button>
+                    </div>
+                    <div id="catContentWrapper">
+                        <h4>Here's a random Cat Fact</h4>
+                        <div class="tabContent" id="catContent">
+                            Content Loading...
+                        </div>
+                        <button id="refreshCatButton">
+                            New Cat Fact
+                        </button>
+                    </div>
+                    <div id="pokemonContentWrapper">
+                        <h4>Here's a random Pokemon Fact</h4>
+                        <div class="tabContent" id="pokemonContent">
+                            Content Loading...
+                        </div>
+                        <button id="refreshPokemonButton">
+                            New Pokemon Fact
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>
