@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS - Cookie Consent</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="dummyContent">
+                <h2> This is some dummy content.</h2>
+                <P id="mainContent">It serves no purpose other than to showcase the cookie consent. IF you do not see the cookie consent window, it's probably because you've accepted it and the persistent cookie storage is working. If you'd like to clear those cookies, click the button below.</P>
+                <button id="clearCookies">Click to clear cookies</button>
+            </div>
+        </main>
+
+        <div class="cookieWrapper" id="cookieWrapper">
+            <div class="cookieOverlay"></div>
+            <div class="cookieWindow">
+                <h2>We value your privacy.</h2>
+                <p>We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+                <div class="buttonRow">
+                    <button id="acceptCookies">Accept All</button>
+                    <button id="denyCookies">Refuse All</button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
